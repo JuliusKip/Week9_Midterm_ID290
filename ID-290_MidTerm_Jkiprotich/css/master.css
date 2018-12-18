@@ -1,0 +1,167 @@
+*,
+*::before,
+*::after {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+body{
+  padding-top: 0px;
+  background: #2B3134;
+  color: black;
+  text-align: center;
+  font-family: "Gill sans", sans-serif;
+  width: 100%;
+  margin: 0 auto;
+  background: url(https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f729eb52d41d8915bae7ac30c23b63b8&auto=format&fit=crop&w=941&q=80);
+  background-size: cover;
+
+  /* background: #E55D87;  /* fallback for old browsers */ */
+  /* background: -webkit-linear-gradient(to right, #5FC3E4, #E55D87);  /* Chrome 10-25, Safari 5.1-6 */ */
+  /* background: linear-gradient(to right, #5FC3E4, #E55D87); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ */
+
+}
+
+
+
+/*Image Slider*/
+.slider{
+	width: 640px;
+	position: relative;
+	padding-top: 320px;
+	margin: 70px auto;
+	box-shadow: 0px 10px 80px -5px rgba(240, 0, 0, 0.75);
+}
+
+.thumbs {
+padding: 30px;
+}
+
+/*transitions*/
+.slider>img{
+	position: absolute;
+	left: 0; top: 0;
+	transition: all 0.3s;
+}
+
+.slider input[name='slide_switch'] {
+	display: none;
+}
+
+.slider label {
+	margin: 18px 0 0 18px;
+	border: 3px solid #999;
+	float: left;
+	cursor: pointer;
+	transition: all 0.5s;
+	opacity: 0.6;
+}
+
+.slider label img{
+	display: block;
+}
+
+/*click effects*/
+.slider input[name='slide_switch']:checked+label {
+	border-color: #666;
+	opacity: 1;
+}
+
+.slider input[name='slide_switch'] ~ img {
+	opacity: 0;
+	transform: scale(1.1);
+}
+
+.slider input[name='slide_switch']:checked+label+img {
+	opacity: 1;
+	transform: scale(1);
+}
+/* End Image slider */
+
+
+
+/* Site layout */
+
+#container {
+    margin: 0 auto;
+    width: 950px;
+    height: 1000px;
+    text-align: center;
+    /* background-color:rgba(255,0,0,0.3); */
+    background: linear-gradient(to top, rgb(95,195,228,.5), rgb(229,93,135,.8));
+    padding: 30px;
+    margin-left: auto;
+}
+
+.bookshelf {
+    width: 150px;
+    height: 300px;
+    float: left;
+    margin: 10px 0px 160px 27px;
+
+}
+
+.subtitle {
+    font-style: italic;
+}
+
+#webtitle {
+    margin-left: 10px;
+    font-family: monospace;
+    font-weight: bolder;
+    font-size: 120%;
+}
+
+#logotitle {
+    font-family: monospace;
+    font-weight: bolder;
+    font-size: 70px;
+    padding: 80px;
+}
+
+.jumbotron {
+    text-align: center;
+}
+
+#bookauthor {
+    color: white;
+    font-style: italic;
+    font-size: 60%;
+}
+
+#booktitle {
+    font-size: 130%;
+    font-family: 'Cardo', serif;
+    color: white;
+}
+
+.barsolid {
+    background-image: linear-gradient(-45deg, #FFC796 0%, #FF6B95 100%);
+    color: red;
+    width: auto;
+    height: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.searchFun {
+  color: blue;
+  padding-bottom: 40px;
+  padding-top: 10px;
+  height: auto;
+}
+
+
+/* footer */
+footer{
+    background-color: #2b2525;
+    height: 40px;
+    color: #eeeeee;
+}
+footer a{
+  color: white;
+  float:right;
+  padding-right: 20px
+}
